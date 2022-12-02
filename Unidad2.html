@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+	  <meta charset = "utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=2">
+    <title>Temario</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<style>
+			#myBtn {
+		  display: none; /* Hidden by default */
+		  position: fixed; /* Fixed/sticky position */
+		  bottom: 20px; /* Place the button at the bottom of the page */
+		  right: 30px; /* Place the button 30px from the right */
+		  z-index: 99; /* Make sure it does not overlap */
+		  border: none; /* Remove borders */
+		  outline: none; /* Remove outline */
+		  background-color: #20B2AA; /* Set a background color */
+		  color: white; /* Text color */
+		  cursor: pointer; /* Add a mouse pointer on hover */
+		  padding: 15px; /* Some padding */
+		  border-radius: 10px; /* Rounded corners */
+		  font-size: 18px; /* Increase font size */
+		}
+
+		#myBtn:hover {
+		  background-color: #555; /* Add a dark-grey background on hover */
+		}
+		</style>
+	</head>
+	    <body bgcolor="azure" background =  "Imagenes/fondo.jpg"    text="black">
+		<h1 align="center" style = "color:limegreen">Arquitectura de computadoras</h1>
+		<h4  style="text-align:justify;font-weight:bold; font-family:Lucida Bright;text-align:right; color:#E74C3C ">Cardenas Castañuela Paulina</h4>
+		
+		<!-- imagen del tec -->
+    <div style="width:50%"> <img src = "IMAGENES/imagenTec.png" style="height:170px; width:150px; float: left padding:0; margin:0"> </div>
+	<!-- icono -->
+	<a href="https://saltillo.tecnm.mx/">
+    <img src="IMAGENES/TECNM.jpeg" width="80" height="45" align="right"></a>
+	<!--BOTON -->	
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+
+			<script>
+			// Get the button
+			let mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+</script>
+
+	<!--FIN BOTON---->
+  <style> 
+  body{background-color:white; padding:10px; font-family:Arial;}
+  
+  #menu{
+        background-color:#952F57;
+  }
+  #menu ul{
+        list-style: none;
+        margin:0;
+        padding:5;
+  }
+  #menu ul li{
+        display: inline-block;
+  }
+  #menu ul li a{
+        color: white;
+        text-decoration:none;
+        display:block;
+        padding:10px;
+		}
+  #menu ul li a:hover{
+        background-color:#800040;
+  }
+  </style>
+  <div id="menu">
+  <ul>
+  <li class="active"><a href="Inicio.html">INICIO</a></li>
+   <li class="active"><a href="Unidad1.html">UNIDAD 1</a></li>
+  <li class="active"><a href="Unidad2.html">UNIDAD 2</a></li>
+  <li class="active"><a href="Unidad3.html">UNIDAD 3</a></li>
+  <li class="active"><a href="Unidad4.html">UNIDAD 4</a></li>
+   <li class="active"><a href="PRACTICAS.html">PRACTICAS</a></li>
+  </ul>
+  </div>
+  
+  <!-- LISTA DE TEMAS DE LA UNIDA 2 -->
+   <div class = "container text-center mt-2">
+  <h3 class="display-10" align="right"> Unidad 2|  Estructura y asesoramiento de la unidad central de procesamiento</h3>
+  <br></br>
+		
+<!-- LISTA DE TEMAS DE LA UNIDAD 2 -->
+		<h4 align= "Left "><li> <a href = "#2.1 Organización del procesador  "> 2.1 Organización del procesador </a></li></h4>
+		<h4 align= "Left "><li> <a href = "#2.2 Estructura de registros" >2.2 Estructura de registros </a></li></h4>
+		<h4 align= "Left "><li> <a href = "#2.3- El ciclo de la instrucción"> 2.3- El ciclo de la instrucción </a></li></h4>
+		<br> </br>
+		<!-- -->
+		<hr>
+		<h2 style="color:blue; text-align:center; font-family:Book Antiqua"><a name= "2.1 Organización del procesador">Organización del procesador</a></h2>
+		<h3 style="text-decoration:underline;font-family:Comic Sans MS;color:#00BAC3;text-align:justify">2.1 Organización del procesador</h3>
+		<p style="text-align:justify; font-style:Book Antiqua; font-family:Arial">La función principal es ejecutar instrucciones, la organización viene condicionada por las
+			tareas que debe realizar y por cómo debe hacerlo operan según una señal de sincronización conocida como señal de reloj.
+			<br></br>
+			Incluye tantos registros visibles para el usuario todo procesador dispone de 3
+			componentes:<br></br>
+			1- UAL: <br></br>Circuito que hace un conjunto de operaciones aritméticas lógicas con los datos almacenados dentro del procesador.<br></br>
+			2- Conjunto de registros:<br></br> Espacio de almacenamiento temporal de datos e instrucciones dentro del procesador.<br></br>
+			3- Unidad de control:<br></br> Circuito que controla el funcionamiento de todos los componentes del procesador<br></br>
+			Controla el movimiento de datos e instrucciones dentro y fuera del procesador y también las operaciones ALU.</p>
+			<center><div style="width:100%"> <img src = "IMAGENES/orga.jpg" style="height:250px; width:450px; float:center/rightwards; padding:10; margin:10"> </div></center>
+			
+		<br></br>
+		<!-- 2.2-->
+		<hr>
+		<h2 style="color:blue; text-align:center; font-family:Book Antiqua"><a name= "2.2 Estructura de registros"> Estructura de registros</a></h2>
+
+		<h6 align="left"><li> <a href = "#2.1.1 Registros visibles para el usuario"> 2.1.1 Registros visibles para el usuario </a></li><h/6>
+		<li> <a href = "#2.2.2 Registros de control y de estados">2.2.2 Registros de control y de estados </a></li>
+		
+		<br> </br> 
+		<!--2.2.1-->
+			<hr>
+		<h3 style="text-decoration:underline;font-family:Comic Sans MS;color:#00BAC3;">2.2 Estructura de registros</h3>
+		<p style="text-align:justify; font-style:Book Antiqua; font-family:Arial">Se emplean para controlar las instrucciones en ejecución, manejar direccionamiento de memoria y propiciar la capacidad aritmética.<br></br>
+			1- Registro de datos: <br></br>Un CPU puede funcionar con datos en uno de tres modos: entre dos registros, entre registros y una ubicación de Memoria de acceso al azar (RAM - Random-
+			Access Memory) y entre dos ubicaciones RAM. Como el CPU está conectado directamente a los registros, las operaciones que implican dos registros son las más rápidas; las que se dan entre ubicaciones RAM son las más lentas. Es decir, junta dos
+			registros, añade un registro a una ubicación RAM, o añade dos ubicaciones RAM.<br></br>
+
+			2- Registro de direcciones:<br></br> Para que un CPU pueda almacenar y recuperar datos en RAM, debe tener la dirección de la memoria de la información. Esas operaciones que implican
+			RAM usan registros de dirección de memoria. EL CPU no realiza aritmética en estos registros; en cambio, los usa para ubicar datos que necesita.<br></br>
+
+			3- Registro de índice: <br></br>Un CPU no puede hacer matemáticas en registros de datos, aunque puede hacerlo indirectamente con un registro de índice. Éste trabaja con los registros de
+			datos, permitiendo a un programa procesar hilos de información eficazmente.<br></br>
+
+			4- Registros de segmento:<br></br> Un registro de segmento tiene 16 bits de longitud y facilita un área de memoria para direccionamiento conocida como segmento actual.<br></br>
+			• Registro Cs: el dos almacena la dirección inicial del segmento de código de un programa en el registro CS. Indica la dirección de una instrucción que es buscada para su ejecución.<br></br>
+			• Registro Ds: genera una referencia a la localidad de un byte específico en el segmento de datos.<br></br>
+			• Registro SS: permite la colocación en memoria de una pila, para almacenamiento temporal de dirección y datos.<br></br>
+			• Registro ES: se utiliza para algunas operaciones con cadenas de caracteres se utiliza para el manejo de direccionamiento de memoria.<br></br>
+
+			5- Registros de propósito general: <br></br>Los registros de propósito general son el AX, BX, CX, y DX, de 16 bits. Cada uno de ellos se divide en dos registros de 8 bits, llamados AH y AL,
+			BH y BL, CH y CL, y, DH y DL, H significando High (alto) y L significando Low (bajo), indicando la parte alta o la parte baja del registro correspondiente de 16 bits.<br></br>
+			• Registro AX: El registro AX es el registro acumulador, es utilizado para operaciones que implican entrada/salida, y multiplicación y división (estas dos últimas en conjunto con el registro DX).<br></br>
+			• Registro BX: El registro BX es el registro base, y es el único registro de propósito general que puede ser un índice para direccionamiento indexado.
+			• Registro CX: El registro CX es conocido como el registro contador. Puede contener un valor para controlar el número de veces que un ciclo se repite o un valor para corrimiento de bits.<br></br>
+			• Registro DX: El registro DX es el registro de datos. En algunas operaciones se indica mediante este registro el número de puerto de entrada/salida, y en las operaciones de multiplicación y división de 16 bits se utiliza junto con el acumulador AX.<br></br>
+
+			6- Registros de apuntadores:<br></br> Los registros SP (apuntador de pila) y BP (apuntador base) están asociados con el registro SS y permiten al sistema acceder a datos en el segmento de la pila.<br></br>
+			• Registro SP: El apuntador de pila de 16 bits está asociado con el segmento SS y proporciona un valor de desplazamiento que se refiere a la palabra actual que está siendo procesada en la pila.<br></br>
+			• Registro BP: El apuntador base de 16 bits facilita la referencia de parámetros dentro de la pila.
+
+			7- Registros de banderas: <br></br>Es un registro de 16 bits, de los cuales nueve sirven para indicar el estado actual de la máquina y el resultado del procesamiento. La tabla contiene 16 posiciones (de 0 a 15), que son los 16 bits del registro de banderas,
+			numeradas de derecha a izquierda. La posición 0 la encontraremos a la derecha y la posición 15 a la izquierda.<br></br>
+			Los bits de las banderas son las siguientes:<br></br>
+			• OF (overflow, desbordamiento): Indica desbordamiento del bit de mayor orden después de una operación aritmética de números con signo (1=existe overflow; 0=no existe overflow). Para operaciones sin signo, no se toma en cuenta esta bandera.<br></br>
+			• DF (dirección): Controla la selección de incremento o decremento de los registros SI y DI en las operaciones con cadenas de caracteres (1=decremento automático; 0=incremento). La bandera DF se controla con las instrucciones STD y CLD.<br></br>
+			• IF (interrupción): Controla el disparo de las interrupciones (1=habilita las interrupciones; 0=deshabilita las interrupciones). La interrupción no enmascarable es la única que no puede ser bloqueada por esta bandera. El estado de la bandera IF se controla con las instrucciones STI y CLI.<br></br>
+			• TF (trampa): Permite la operación del procesador en modo de depuración (paso a paso).<br></br>
+			• SF (signo): Contiene el signo resultante de una operación aritmética (0=positivo; 1=negativo).<br></br>
+			• ZF (cero): Indica el resultado de una operación aritmética o de comparación (0=resultado diferente de cero; 1=resultado igual a cero).<br></br>
+			• AF (acarreo auxiliar): Contiene el acarreo del bit 3. Esta bandera se prueba con las instrucciones DAA y DAS para ajustar el valor de AL después de una suma o resta BCD.<br></br>
+			• PF (paridad): Indica si el número de bits 1, del byte menos significativos de una operación, es par (0=número de bits 1 es impar; 1=número de bits 1 es par).<br></br>
+
+			• CF (acarreo): Contiene el acarreo del bit de mayor orden después de una operación aritmética; también almacena el contenido del último bit en una operación de desplazamiento o de rotación.<br></br>
+
+			8- Registro de punteros de instrucción: <br></br>El registro IP de 16 bits contiene el desplazamiento de dirección de la siguiente instrucción que se ejecuta. El IP está
+			asociado con el registro CS en el sentido de que el IP indica la instrucción actual dentro del segmento de código que se está ejecutando actualmente en la memoria.</p>
+		<br></br>
+		<hr>
+		<h2 style="color:blue; text-align:center; font-family:Book Antiqua"> Registros visibles para el usuario </h2>
+		<a name="2.1.1 Registros visibles para el usuario"><h3 style="text-decoration:underline;font-family:Comic Sans MS;color:#00BAC3;">2.1.1 Registros visibles para el usuario</h3>
+		<p style="text-align:justify; font-style:Book Antiqua; font-family:Arial"> Un registro visible para el usuario es aquel que pueden referenciarse por medio del lenguaje que la CPU ejecuta. Se puede caracterizar en las siguientes categorías.
+			<br></br>-Propósito general:<br></br>
+			Son utilizados por el programador para diversas funciones.<br></br>
+			-Datos:<br></br>
+			Pueden utilizarse únicamente para contener datos y no se pueden emplear el cálculo de
+			la dirección de un operando.</p>
+		<br></br>
+		<hr>
+		<h2 style="color:blue; text-align:center; font-family:Book Antiqua"> Registros de control y de estados  </h2>
+		<a name="2.2.2 Registros de control y de estados"><h3 style="text-decoration:underline;font-family:Comic Sans MS;color:#00BAC3;">2.2.2 Registros de control y de estados </h3>
+		<p style="text-align:justify; font-style:Book Antiqua; font-family:Arial">Son utilizados por la unidad de control para controlar el funcionamiento del procesador y por programas privilegiados del sistema operativo para controlar la ejecución de programas.</p>
+		<p>Hay diversos registros del procesador que se emplean para controlar su funcionamiento. La mayororıa de ellos, en la mayor parte de las maquinas no son visibles por el usuario, pero alguno de ellos
+		puede ser visible por ciertas instrucciones maquina ejecutadas en un modo privilegiado o de sistema operativo.<br></br>Naturalmente, diferentes maquinas tendr´an distinta organización de registros y usarán distinta terminología. Son esenciales cuatro registros para la
+		ejecución de una instrucción: <br></br>→ Contador de programa (ProgramCounter- PC): Contiene la dirección de la instrucción a buscar<Br></br>→ Registro de instrucción (Instruction
+			Register- IR): Contiene la instrucción buscada mas recientemente <br></br>→ Registro de dirección de memoria (Memory Address Register- MAR) Contiene
+			la dirección de una posición de memoria<br></br>
+			→ Registro amortiguador de memoria (Memory Buffer Register - MBR) Contiene el dato a escribir en una posición de memoria o el dato contenido en una posición de memoria leído mas recientemente</p>
+		<br></br>
+		<!-- 2.3-->
+		<hr>
+		<h2 style="color:blue; text-align:center; font-family:Book Antiqua"><a name="2.3- El ciclo de la instrucción"> El ciclo de la instrucción</h2>
+		<h6 align="left"><li> <a href = "#2.3.1- Segmentación de instrucciónes"> 2.3.1- Segmentación de instrucciónes </a></li><h/6>
+		<li> <a href = "#2.3.2- Ciclo Fetch-Decode-Execute">2.3.2- Ciclo Fetch-Decode-Execute </a></li>
+		<li> <a href = "#2.3.3 Conjunto de instrucciónes,caracteristicas y funciones">2.3.3 Conjunto de instrucciónes,caracteristicas y funciones </a></li>
+		<li> <a href = "#2.3.4- Modos de direccionamiento">2.3.4- Modos de direccionamiento </a></li>
+		<br> </br> 
+		<!--2.3-->
+		<a name="2.3- El ciclo de la instrucción"><h3 style="text-decoration:underline;font-family:Comic Sans MS;color:#00BAC3;">2.3- El ciclo de la instrucción</h3>
+		<p style="text-align:justify; font-style:Book Antiqua; font-family:Arial">El Ciclo Instrucción cuenta con dos fases, la primera es la obtención(búsqueda) y la segunda es la fase de ejecución:</p>
+		<center><div style="width:100%"> <img src = "IMAGENES/ciclo.png" style="height:350px; width:550px; float:center/rightwards; padding:10; margin:10"> </div></center>
+		<br></br>
+		<!--2.3.1-->
+		<hr>
+		<h2 style="color:blue; text-align:center; font-family:Book Antiqua"> Segmentación de instrucciónes</h2>
+		<a name="2.3.1- Segmentación de instrucciónes"><h3 style="text-decoration:underline;font-family:Comic Sans MS;color:#00BAC3;">2.3.1- Segmentación de instrucciónes</h3>
+		<p style="text-align:justify; font-style:Book Antiqua; font-family:Arial"> El objetivo de la segmentación es ejecutar simultáneamente diferentes etapas de distintas instrucciones, lo cual permite aumentar
+			el rendimiento del procesador sin tener que hacer más rápidas todas las unidades del procesador (ALU, UC, buses, etc.) y sin tener que duplicarlas.<br></br>
+			La división de la ejecución de una instrucción en diferentes etapas se debe realizar de tal manera que cada etapa tenga la misma duración,generalmente un ciclo de reloj.<br></br>
+			Es necesario añadir registros para almacenar los resultados intermedios entre las diferentes etapas, de modo que la información
+			generada en una etapa esté disponible para la etapa siguiente.<br></br>
+			La segmentación es como una cadena de montaje. En cada etapa de la cadena se lleva a cabo una parte del trabajo total y cuando se acaba el trabajo de una etapa.<br></br>
+			El producto pasa a la siguiente y así sucesivamente hasta llegar al
+			final.<br></br>
+			Si hay N etapas, se puede trabajar sobre N productos al mismo tiempo y, si la cadena está bien equilibrada, saldrá un producto acabado en el tiempo que se tarda en llevar a cabo una de las etapas.
+			De esta manera, no se reduce el tiempo que se tarda en hacer un
+			producto, sino que se reduce el tiempo total necesario para hacer una
+			determinada cantidad de productos porque las operaciones de cada
+			etapa se efectúan simultáneamente.</p>
+			<center><div style="width:100%"> <img src = "IMAGENES/segmentacion.jpg" style="height:390px; width:860px; float:center; padding:10; margin:10"> </div></center>
+		<br></br>
+		<!--2.3.2-->
+		<hr>
+		<h2 style="color:blue; text-align:center; font-family:Book Antiqua"> Ciclo Fetch-Decode-Execute </h2>
+		<a name="2.3.2- Ciclo Fetch-Decode-Execute"><h3 style="text-decoration:underline;font-family:Comic Sans MS;color:#00BAC3;">2.3.2- Ciclo Fetch-Decode-Execute</h3>
+		<p style="text-align:justify; font-style:Book Antiqua; font-family:Arial"> Un ciclo de instrucción (también llamado ciclo de fetch-and-execute
+			o ciclo de fetch-decode-execute en inglés) es el período que tarda la unidad central de procesamiento (CPU) en ejecutar una instrucción de lenguaje máquina.<br></br>
+			Comprende una secuencia de acciones determinada que debe llevar a cabo el CPU para ejecutar cada instrucción en un programa. Cada instrucción del juego de instrucciones de un CPU puede requerir
+			diferente número de ciclos de instrucción para su ejecución. Un ciclo de instrucción está formado por uno o más ciclos máquina.Para que cualquier sistema de proceso de datos basado en
+			microprocesador (por ejemplo un ordenador o computadora personal) o microcontrolador (por ejemplo un reproductor de MP3) realice una tarea (programa) primero debe buscar cada instrucción
+			en la memoria principal y luego ejecutarla.</p>
+		<center><div style="width:100%"> <img src = "IMAGENES/cicloFDE.png" style="height:480px; width:640px; float:center/rightwards; padding:10; margin:10"> </div></center>
+		<br></br>
+		<!--2.3.3-->
+		<hr>
+		<h2 style="color:blue; text-align:center; font-family:Book Antiqua"> Conjunto de instrucciónes,caracteristicas y funciones</h2>
+		<a name="2.3.3 Conjunto de instrucciónes,caracteristicas y funciones"><h3 style="text-decoration:underline;font-family:Comic Sans MS;color:#00BAC3;">2.3.3 Conjunto de instrucciónes,caracteristicas y funciones</h3>
+		<p style="text-align:justify; font-style:Book Antiqua; font-family:Arial"> La segmentación de instrucciones es similar al uso de una cadena de
+		montaje en una fábrica de manufacturación. En las cadenas de montaje, el producto pasa a través de varias etapas de producción antes de tener el producto terminado. Cada etapa o segmento de la
+		cadena está especializada en un área específica de la línea de producción y lleva a cabo siempre la misma actividad. Esta tecnología es aplicada en el diseño de procesadores eficientes.
+		<br></br>A estos procesadores se les conoce como pipeline processors. Estos están compuestos por una lista de segmentos lineales y secuenciales en donde cada segmento lleva a cabo una tarea o un grupo de tareasputacionales. Los datos que provienen del exterior se introducen en el sistema para ser procesados.
+		<br></br>La computadora realiza operaciones con los datos que tiene almacenados en memoria, produce nuevos datos o información para
+		uso externo.<br></br>Las arquitecturas y los conjuntos de instrucciones se pueden clasificar considerando aspectos posibles:<br></br>
+		@ Almacenamiento de operandos en la CPU: dónde se ubican los operandos aparte de la memoria.<br></br>
+
+		@ Número de operandos explícitos por instrucción: cuántos operandos se expresan en forma explícita en una instrucción típica.
+		Como son 0,1,2,3. <br></br>
+		@ Posición del operando: Todos en los registros internos de la CPU. Cómo se especifica la dirección de memoria (modos de direccionamiento disponible).<br></br>
+		@ Operaciones: Qué operaciones están disponibles en el conjunto de instrucciones.<br></br>
+		Tipo y tamaño de operandos y cómo se especifican.</p>
+		<center><div style="width:100%"> <img src = "IMAGENES/instru.jpeg" style="height:133px; width:370px; float:center/rightwards; padding:10; margin:10"> </div></center>
+		<br></br>
+		<!--2.3.4-->
+		<hr>
+		<h2 style="color:blue; text-align:center; font-family:Book Antiqua"> Modos de direccionamiento</h2>
+		<a name="2.3.4- Modos de direccionamiento"><h3 style="text-decoration:underline;font-family:Comic Sans MS;color:#00BAC3;">2.3.4- Modos de direccionamiento</h3>
+		<p style="text-align:justify; font-style:Book Antiqua; font-family:Arial"> Contar con diferentes formatos de instrucciones, implica contar con las diferentes
+		formas de obtener los operandos de las instrucciones. Dichas formas de se les denomina modos de direccionamiento.<br></br>
+		1- Direccionamiento por registro:<br></br>
+		Los operandos son registros, los datos a operar están en dos registros de 32 bytes cada uno, dichos datos se suman y el resultado será otro registro del mismo tamaño</p>
+		<center><div style="width:100%"> <img src = "IMAGENES/registro.png" style="height:119px; width:810px; float:center/rightwards; padding:10; margin:10"> </div></center>
+		<br></br>
+		<p>2- Direccionamiento base o desplazamiento<br></br> Donde uno de los operandos está en una localidad de memoria cuya dirección es la suma
+		de un registro y una constante que forma parte de la misma instrucción. Ejemplos de instrucciones que usan este modo de direccionamiento: lw, sw, etc.</p>
+		<center><div style="width:100%"> <img src = "IMAGENES/base.png" style="height:173px; width:810px; float:center/rightwards; padding:10; margin:10"> </div></center>
+		<br></br>
+		<p>3- Direccionamiento inmediato:<br></br> Donde se forma una dirección sumando una constante, que está en la instrucción, con el
+			registro PC (Program Counter). El resultado de la suma corresponde a la dirección destino si un brinco condicional se va a realizar.
+			Ejemplos de instrucciones que usan este modo de direccionamiento: beq y bne.</p>
+		<center><div style="width:100%"> <img src = "IMAGENES/inmediato.png" style="height:126px; width:806px; float:center/rightwards; padding:10; margin:10"> </div></center>
+		<br></br>
+		<p>3- Direccionamiento relativo al PC:<br></br> Donde uno de los operandos es una constante que está en la misma instrucción. Ejemplos de instrucciones que usan este modo de direccionamiento: addi, slti, etc.</p>
+		<Center><div style="width:100%"> <img src = "IMAGENES/relativo.png" style="height:140px; width:804px; float:center/rightwards; padding:10; margin:10"> </div></center>
+		<br></br>
+		<p>4- Direccionamiento pseudo directo:<br></br> Donde la dirección destino de un salto corresponde a la concatenación de 26 bits que están en la misma instrucción con los bits más significativos del PC.
+		Ejemplos de instrucciones que usan este modo de direccionamiento: j y jal.</p>
+		<center><div style="width:100%"> <img src = "IMAGENES/pso.png" style="height:146px; width:808px; float:center/rightwards; padding:10; margin:10"> </div></center>
+		</html> 

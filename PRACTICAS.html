@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+			<head>
+			  <meta charset = "utf-8">
+			  <meta name="viewport" content="width=device-width, initial-scale=2">
+			<title>Temario</title>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+				<style>
+					#myBtn {
+				  display: none; /* Hidden by default */
+				  position: fixed; /* Fixed/sticky position */
+				  bottom: 20px; /* Place the button at the bottom of the page */
+				  right: 30px; /* Place the button 30px from the right */
+				  z-index: 99; /* Make sure it does not overlap */
+				  border: none; /* Remove borders */
+				  outline: none; /* Remove outline */
+				  background-color: #20B2AA; /* Set a background color */
+				  color: white; /* Text color */
+				  cursor: pointer; /* Add a mouse pointer on hover */
+				  padding: 15px; /* Some padding */
+				  border-radius: 10px; /* Rounded corners */
+				  font-size: 18px; /* Increase font size */
+				}
+
+				#myBtn:hover {
+				  background-color: #555; /* Add a dark-grey background on hover */
+				}
+				</style>
+			</head>
+				<body bgcolor="azure" background =  "Imagenes/fondo.jpg"    text="black">
+				<h1 align="center" style = "color:limegreen">Arquitectura de computadoras</h1>
+				<h4  style="text-align:justify;font-weight:bold; font-family:Lucida Bright;text-align:right; color:#E74C3C ">Cardenas Castañuela Paulina</h4>
+				
+				<!-- imagen del tec -->
+			<div style="width:50%"> <img src = "IMAGENES/imagenTec.png" style="height:170px; width:150px; float: left padding:0; margin:0"> </div>
+			<!-- icono -->
+			<a href="https://saltillo.tecnm.mx/">
+			<img src="IMAGENES/TECNM.jpeg" width="80" height="45" align="right"></a>
+			<!--BOTON -->	
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+
+					<script>
+					// Get the button
+					let mybutton = document.getElementById("myBtn");
+
+					// When the user scrolls down 20px from the top of the document, show the button
+					window.onscroll = function() {scrollFunction()};
+
+					function scrollFunction() {
+					  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						mybutton.style.display = "block";
+					  } else {
+						mybutton.style.display = "none";
+					  }
+					}
+
+					// When the user clicks on the button, scroll to the top of the document
+					function topFunction() {
+					  document.body.scrollTop = 0;
+					  document.documentElement.scrollTop = 0;
+					}
+		</script>
+
+			<!--FIN BOTON---->
+		  <style> 
+		  body{background-color:white; padding:10px; font-family:Arial;}
+		  
+		  #menu{
+				background-color:#952F57;
+		  }
+		  #menu ul{
+				list-style: none;
+				margin:0;
+				padding:5;
+		  }
+		  #menu ul li{
+				display: inline-block;
+		  }
+		  #menu ul li a{
+				color: white;
+				text-decoration:none;
+				display:block;
+				padding:10px;
+				}
+		  #menu ul li a:hover{
+				background-color:#800040;
+		  }
+		  </style>
+		 <div id="menu">
+		  <ul>
+		  <li class="active"><a href="Inicio.html">INICIO</a></li>
+		   <li class="active"><a href="Unidad1.html">UNIDAD 1</a></li>
+		  <li class="active"><a href="Unidad2.html">UNIDAD 2</a></li>
+		  <li class="active"><a href="Unidad3.html">UNIDAD 3</a></li>
+		  <li class="active"><a href="Unidad4.html">UNIDAD 4</a></li>
+		  <li class="active"><a href="PRACTICAS.html">PRACTICAS</a></li>
+		  </ul>
+		  </div>
+		  <br></br>
+		<h3 style="text-align:center ; font-style:Book Antiqua; font-family:Arial"> ESTE APARTADO MUESTRA LAS PRACTICAS CORRESPONDIENTES QUE SE VIERON 
+		DURANTE EL SEMESTRE </h3>
+		<hr>
+		
+		<h4><li> <a href = "#componentes">Componentes de la Computadora</a></li>
+		<li><a href= "#procesadores">Generación de Procesadores</a></li>
+		<li> <a href = "#intel">Procesadores Intel</a></li>
+		<li><a href= "#ADM">Procesadores AMD</a></li>
+		<li><a href= "#diseño">Diseño de Equipos</a></li>
+		<li> <a href = "#cotizacion">Cotización de Equipos</a></li></h4>
+		
+		
+		
+		<center>
+		<a name="componentes"> <object width="800" height="600"  data="Componentes.pdf"></object> 
+		<br></br>
+
+		<a name="procesadores"><iframe  width="800" height="600" src="procesadores.pdf"></iframe> </center>
+		<br></br>
+		
+		<a name="intel"> <center><object width="900" height="600"  data="Intel.pdf"></object>
+		<br></br>
+
+		<a name="ADM"> <iframe  width="900" height="600" src="ADM.pdf"></iframe>
+		<br></br>
+		
+		<a name="diseño"> <object width="800" height="600"  data="DiseñoEquipos.pdf"></object>
+		<br></br>
+
+		<a name="cotizacion"> <iframe  width="800" height="600" src="cotizacion.pdf"></iframe></center>
+  </html>
